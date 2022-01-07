@@ -9,8 +9,8 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-import LoginForm from './components/LoginForm';
-import SignupForm from './components/SignupForm';
+// import LoginForm from './components/LoginForm';
+// import SignupForm from './components/SignupForm';
 import SavedBooks from './pages/SavedBooks';
 import SearchBooks from './pages/SearchBooks';
 
@@ -65,18 +65,6 @@ function App() {
             <Route exact path="/saved">
               <SavedBooks />
             </Route>
-            {/* <Route exact path="/signup">
-              <Signup />
-            </Route>
-            <Route exact path="/me">
-              <Profile />
-            </Route>
-            <Route exact path="/profiles/:username">
-              <Profile />
-            </Route>
-            <Route exact path="/thoughts/:thoughtId">
-              <SingleThought />
-            </Route> */}
         </>
       </Router>
     </ApolloProvider>
